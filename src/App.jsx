@@ -1,10 +1,8 @@
-import { useState } from 'react'
+import Verify from './components/verify/VefiryOTP'
 
 function App() {
   return (
-    <>
-      <p className='text-red-400 font-extrabold'>Codavatar</p>
-    </>
+    <Verify></Verify>
   )
 }
 

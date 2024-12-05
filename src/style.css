@@ -1,0 +1,21 @@
+/* Hide the up/down arrows in WebKit-based browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Additional for Edge */
+input[type="number"]::-ms-clear {
+  display: none;
+}
+
+input[type="number"] {
+  border: none;
+  outline: none;
+  padding: 8px;
+}
