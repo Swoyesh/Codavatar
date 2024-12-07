@@ -5,12 +5,12 @@ import Button from "./Button";
 
 const Main = () => {
   return (
-    <div className="mt-[97px] w-[519px] h-[284px]">
+    <div className="w-[519px] h-[284px]">
       <Subtitle></Subtitle>
-      <div className="mt-[48px]">
+      <div className="pt-[48px]">
         <Input></Input>
       </div>
-      <div className="mt-[24px]">
+      <div className="pt-[24px]">
         <Button></Button>
       </div>
     </div>
