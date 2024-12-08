@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Button = () => {
   const [minutes, setMinutes] = useState(1);
@@ -25,14 +26,16 @@ const Button = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [minutes]); 
+  }, [minutes]);
 
   return (
     <>
       <div className="w-[519px] h-[48px]">
-        <button className="h-full w-full p-[14px] rounded-[10px] bg-[#e50000] opacity-80 text-white transition-colors duration-500 hover:bg-red-800">
-          Verify
-        </button>
+        {/* <Link to="/Information"> */}
+          <button className="h-full w-full p-[14px] rounded-[10px] bg-[#e50000] opacity-80 text-white transition-colors duration-500 hover:bg-red-800">
+            Verify
+          </button>
+        {/* </Link> */}
       </div>
       <div
         className={`mt-[16px] font-normal text-[16px] leading-[24px] text-[#646464] ${display1}`}
