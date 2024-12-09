@@ -6,14 +6,18 @@ import { Link } from "react-router-dom";
 const Back = () => {
   return (
     <div className="flex items-center">
+      {/* FontAwesome icon for the back arrow */}
       <div>
         <FontAwesomeIcon
           icon={faArrowLeft}
           className="mr-2 w-[11.67] h-[10] text-[#E0E0E0]"
         />
       </div>
+      {/* Link that navigates to /SendOTP when clicked */}
       <div className="text-[14px] text-[#E0E0E0] w-33 h-21">
-        <Link to = '/SendOTP'><button>Back</button></Link>
+        <Link to="/SendOTP">
+          <button>Back</button>
+        </Link>
       </div>
     </div>
   );

@@ -1,21 +1,14 @@
 import React from "react";
-import SmallInput from "./SmallInput";
+import SmallSelect from "./SmallSelect"; // Importing the SmallSelect component to be used in MiniSelect
 
-const MiniInput = (props) => {
+const MiniSelect = (props) => {
   return (
-    <div className="flex gap-8">
-      <SmallInput
-        label={props.label1}
-        ph={props.ph1}
-        type={props.type1}
-      ></SmallInput>
-      <SmallInput
-        label={props.label2}
-        ph={props.ph2}
-        type={props.type2}
-      ></SmallInput>
+    <div className="flex gap-8"> {/* Flex container with a gap between the child elements */}
+      {/* Render two SmallSelect components, passing props to each */}
+      <SmallSelect label={props.label1} ph={props.ph1} />
+      <SmallSelect label={props.label2} ph={props.ph2} />
     </div>
   );
 };
 
-export default MiniInput;
+export default MiniSelect;
