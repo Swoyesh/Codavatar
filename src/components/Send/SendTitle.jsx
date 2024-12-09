@@ -1,4 +1,5 @@
 import React from "react";
+import logos from '../../../public/logos.png'
 
 const SendTitle = () => {
   return (
@@ -7,7 +8,7 @@ const SendTitle = () => {
         {/* Logo image with responsive sizing */}
         <img
           className="logo w-12 h-17 2xl:w-16 2xl:h-16"
-          src="/logos.png"
+          src={logos}
           alt="Logo"
         />
         {/* Title text with responsive font size */}
