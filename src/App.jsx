@@ -22,7 +22,7 @@ function App() {
         <Route path="/VerifyOTP" element={<VerifyOTP />} />
         
         {/* Route for Information page */}
-        <Route path="/Information" element={<Information />} />
+        {/* <Route path="/Information" element={<Information />} /> */}
       </Routes>
     </Router>
   );
