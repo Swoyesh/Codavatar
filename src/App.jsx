@@ -1,4 +1,5 @@
 // Import styles and components
+import React from 'react';
 import "flag-icons/css/flag-icons.min.css";
 import SendOTP from "./components/Send/SendOTP";
 import VerifyOTP from "./components/verify/VefiryOTP";
@@ -9,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename='/Codavatar'>
       <Routes>
         {/* Route for SendOTP page */}
         <Route path="/" element={<SendOTP />} />

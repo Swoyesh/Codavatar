@@ -1,3 +1,5 @@
+import React from "react";
+
 const SmallSelect = (props) => {
   return (
     <div className="flex flex-col w-[387px]">
